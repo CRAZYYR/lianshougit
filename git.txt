@@ -1,0 +1,485 @@
+
+Go With Me@???? MINGW64 ~/Desktop
+$ cd e:
+
+Go With Me@???? MINGW64 /e
+$ cd warehouse
+
+Go With Me@???? MINGW64 /e/warehouse
+$ cd lianshougit
+
+Go With Me@???? MINGW64 /e/warehouse/lianshougit (master)
+$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+Go With Me@???? MINGW64 /e/warehouse/lianshougit (master)
+$
+
+Go With Me@???? MINGW64 /e/warehouse/lianshougit (master)
+$ git reset help
+fatal: ambiguous argument 'help': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Go With Me@???? MINGW64 /e/warehouse/lianshougit (master)
+$ git help reset
+
+Go With Me@???? MINGW64 /e/warehouse/lianshougit (master)
+$ git reset --hard HEAD^^^^
+HEAD is now at 5335e77 hha
+
+Go With Me@???? MINGW64 /e/warehouse/lianshougit (master)
+$ git reset --hard HEAD~3
+fatal: ambiguous argument 'HEAD~3': unknown revision or path not in the working tre                                                                  e.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Go With Me@???? MINGW64 /e/warehouse/lianshougit (master)
+$ git reset --hard HEAD ^
+fatal: Cannot do hard reset with paths.
+
+Go With Me@???? MINGW64 /e/warehouse/lianshougit (master)
+$ git reset --hard HEAD^^^^^^
+fatal: ambiguous argument 'HEAD^^^^^^': unknown revision or path not in the working                                                                   tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Go With Me@???? MINGW64 /e/warehouse/lianshougit (master)
+$ git log
+commit 5335e77994d3c5d04d1928cc3094aa7445ae69aa (HEAD -> master)
+Author: zscool <501574878@qq.com>
+Date:   Sat May 20 22:01:26 2017 +0800
+
+    hha
+
+Go With Me@???? MINGW64 /e/warehouse/lianshougit (master)
+$ ^C
+
+Go With Me@???? MINGW64 /e/warehouse/lianshougit (master)
+$ ^C
+
+Go With Me@???? MINGW64 /e/warehouse/lianshougit (master)
+$ git reset --hard 5335e77994d3c5d04d1
+HEAD is now at 5335e77 hha
+
+Go With Me@???? MINGW64 /e/warehouse/lianshougit (master)
+$ cd ..
+
+Go With Me@???? MINGW64 /e/warehouse
+$ cd yyzx
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git log
+commit 260efacc4d4053d94f5d94359fc9f786066d8dbe (HEAD -> master)
+Author: mylzs <1535984@qq.com>
+Date:   Sat May 20 23:09:25 2017 +0800
+
+    conf
+
+commit 8b3a6a05e024480e877811293cc62d4e26b20401
+Author: mylzs <1535984@qq.com>
+Date:   Sat May 20 23:02:44 2017 +0800
+
+    ss
+
+commit f260ef351fdbcb769846685b7192fb6e990a3079
+Author: mylzs <1535984@qq.com>
+Date:   Sat May 20 22:58:26 2017 +0800
+
+    you me
+
+commit 44b7ecfb6b8b4e14fdc55110d533354173523ad4
+Author: mylzs <1535984@qq.com>
+Date:   Sat May 20 22:56:16 2017 +0800
+
+    add
+
+commit 9a0b7d344db4eecda49010eb5a37011fea29f5a6
+Author: mylzs <1535984@qq.com>
+Date:   Sat May 20 22:52:34 2017 +0800
+
+    add one
+
+commit 7b3e97cd1e1413161ffa67f77683835ba6658b8b (lianshou/master)
+Author: zscool <501574878@qq.com>
+Date:   Sat May 20 22:33:41 2017 +0800
+
+    hello
+
+commit 25e1918f18a8ae7e394a9458e59e7a2637ffe4a3
+Author: zscool <501574878@qq.com>
+Date:   Sat May 20 22:13:42 2017 +0800
+
+    delete
+
+commit 1040accc735ea3e0389972df39d51dbb549e91c0
+Author: zscool <501574878@qq.com>
+Date:   Sat May 20 22:05:35 2017 +0800
+:
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git reset --hard HEAD^^^^
+HEAD is now at 9a0b7d3 add one
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git reset --hard f260ef351fdbcb769846
+HEAD is now at f260ef3 you me
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git log --oretty=oneline
+fatal: unrecognized argument: --oretty=oneline
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git relog
+git: 'relog' is not a git command. See 'git --help'.
+
+Did you mean this?
+        reflog
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git reflog
+f260ef3 (HEAD -> master) HEAD@{0}: reset: moving to f260ef351fdbcb769846
+9a0b7d3 HEAD@{1}: reset: moving to HEAD^^^^
+260efac HEAD@{2}: commit: conf
+8b3a6a0 HEAD@{3}: pull https://github.com/zslmy/lianshougit.git master: Fast-forward
+7b3e97c (lianshou/master) HEAD@{4}: commit: hello
+25e1918 HEAD@{5}: commit: delete
+1040acc HEAD@{6}: commit: ºÚºÚÈé
+5335e77 HEAD@{7}: commit (initial): hha
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git reset --hard ^C
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git reset --hard 25e1918
+HEAD is now at 25e1918 delete
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git reset --hard ^C
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git reset --hard 260efac
+HEAD is now at 260efac conf
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$  git brank
+git: 'brank' is not a git command. See 'git --help'.
+
+Did you mean this?
+        branch
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git branch
+* master
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git reflog
+260efac (HEAD -> master) HEAD@{0}: reset: moving to 260efac
+25e1918 HEAD@{1}: reset: moving to 25e1918
+f260ef3 HEAD@{2}: reset: moving to f260ef351fdbcb769846
+9a0b7d3 HEAD@{3}: reset: moving to HEAD^^^^
+260efac (HEAD -> master) HEAD@{4}: commit: conf
+8b3a6a0 HEAD@{5}: pull https://github.com/zslmy/lianshougit.git master: Fast-forward
+7b3e97c (lianshou/master) HEAD@{6}: commit: hello
+25e1918 HEAD@{7}: commit: delete
+1040acc HEAD@{8}: commit: ºÚºÚÈé
+5335e77 HEAD@{9}: commit (initial): hha
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git branch wechat
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git branch
+* master
+  wechat
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git checkout wechat
+Switched to branch 'wechat'
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (wechat)
+$ git branch
+  master
+* wechat
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (wechat)
+$ ls
+xx.txt  zzzz.md
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (wechat)
+$ git status
+On branch wechat
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   xx.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (wechat)
+$ git add .
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (wechat)
+$ git commit -m "web to do"
+[wechat dc32026] web to do
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (wechat)
+$ git branch
+  master
+* wechat
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (wechat)
+$ git checkout master
+Switched to branch 'master'
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git checkout wechat
+Switched to branch 'wechat'
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (wechat)
+$ git checkout master
+Switched to branch 'master'
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git branch ali
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git branch
+  ali
+* master
+  wechat
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git checkout ali
+Switched to branch 'ali'
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (ali)
+$ git status
+On branch ali
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   xx.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        fiexbug for ali.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (ali)
+$ git checkout master
+Switched to branch 'master'
+M       xx.txt
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git checkout ali
+Switched to branch 'ali'
+M       xx.txt
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (ali)
+$ status
+bash: status: command not found
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (ali)
+$ git status
+On branch ali
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   xx.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        fiexbug for ali.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (ali)
+$ git add .
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (ali)
+$ git status
+On branch ali
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   fiexbug for ali.txt
+        modified:   xx.txt
+
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (ali)
+$ git checkout master
+Switched to branch 'master'
+A       fiexbug for ali.txt
+M       xx.txt
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git checkout ali
+Switched to branch 'ali'
+A       fiexbug for ali.txt
+M       xx.txt
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (ali)
+$ git status
+On branch ali
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   fiexbug for ali.txt
+        modified:   xx.txt
+
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (ali)
+$ git commit -m "ali add"
+[ali a2efb4c] ali add
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 fiexbug for ali.txt
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (ali)
+$ git checkout master
+Switched to branch 'master'
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git checkout ali
+Switched to branch 'ali'
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (ali)
+$ git checkout master
+Switched to branch 'master'
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git merge ali
+Updating 260efac..a2efb4c
+Fast-forward
+ fiexbug for ali.txt | 1 +
+ xx.txt              | 4 +++-
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 fiexbug for ali.txt
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git branch
+  ali
+* master
+  wechat
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git checkout wechat
+Switched to branch 'wechat'
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (wechat)
+$ git add .
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (wechat)
+$ git commit -m "wechat add"
+[wechat 8d6cf48] wechat add
+ 1 file changed, 1 insertion(+)
+ create mode 100644 wechat.txt
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (wechat)
+$ git status
+On branch wechat
+nothing to commit, working tree clean
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (wechat)
+$ git checkout master
+Switched to branch 'master'
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git merge wechat
+Auto-merging xx.txt
+CONFLICT (content): Merge conflict in xx.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master|MERGING)
+$ git add .
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master|MERGING)
+$ git commit -m "ÐÞ¸Ä³åÍ»"
+[master 48a2e54] ÐÞ¸Ä³åÍ»
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ git push https://github.com/zslmy/lianshougit.git master
+Counting objects: 13, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (13/13), 1.18 KiB | 0 bytes/s, done.
+Total 13 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/zslmy/lianshougit.git
+   260efac..48a2e54  master -> master
+
+Go With Me@???? MINGW64 /e/warehouse/yyzx (master)
+$ cd ..
+
+Go With Me@???? MINGW64 /e/warehouse
+$ cd lianshougit
+
+Go With Me@???? MINGW64 /e/warehouse/lianshougit (master)
+$ git pull https://github.com/zslmy/lianshougit.git
+remote: Counting objects: 16, done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 16 (delta 3), reused 16 (delta 3), pack-reused 0
+Unpacking objects: 100% (16/16), done.
+From https://github.com/zslmy/lianshougit
+ * branch            HEAD       -> FETCH_HEAD
+Updating 5335e77..48a2e54
+Fast-forward
+ fiexbug for ali.txt |  1 +
+ wechat.txt          |  1 +
+ xx.txt              | 24 +++++++++++++++++++++++-
+ zzzz.md             |  1 +
+ 4 files changed, 26 insertions(+), 1 deletion(-)
+ create mode 100644 fiexbug for ali.txt
+ create mode 100644 wechat.txt
+ create mode 100644 zzzz.md
+
+Go With Me@???? MINGW64 /e/warehouse/lianshougit (master)
+$
